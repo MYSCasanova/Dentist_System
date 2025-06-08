@@ -4,7 +4,7 @@ FROM tomcat:9.0-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy your WAR file into the webapps folder as ROOT.war (note slashes and spaces)
-COPY ROOT.war /usr/local/tomcat/webapps/ROOT.war
+COPY webapps/ROOT.war /usr/local/tomcat/webapps/ROOT.war
 
 
 # Expose Tomcat default port
